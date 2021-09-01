@@ -1,4 +1,14 @@
-# Pure Storage FlashArray As Built Report Changelog
+# :arrows_counterclockwise: PureStorage FlashArray As Built Report Changelog
+
+## [0.5.0] - Unreleased
+
+### Added
+
+### Changed
+
+### Fixed
+
+### Removed
 
 ## [0.4.1] - 2019-04-03
 ### Changed
@@ -11,3 +21,4 @@
 ### Changed
 - Refactored into PowerShell module
 - Updated default Pure Storage style sheet to include page orientation
+
