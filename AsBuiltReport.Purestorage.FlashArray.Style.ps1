@@ -4,32 +4,32 @@
 DocumentOption -EnableSectionNumbering -PageSize A4 -DefaultFont 'Arial' -MarginLeftAndRight 71 -MarginTopAndBottom 71 -Orientation $Orientation
 
 # Configure Heading and Font Styles
-Style -Name 'Title' -Size 24 -Color 'F05423' -Align Center
-Style -Name 'Title 2' -Size 18 -Color '2F2F2F' -Align Center
-Style -Name 'Title 3' -Size 12 -Color '2F2F2F' -Align Left
-Style -Name 'Heading 1' -Size 16 -Color 'F05423'
-Style -Name 'Heading 2' -Size 14 -Color 'F05423'
-Style -Name 'Heading 3' -Size 12 -Color 'F05423'
-Style -Name 'Heading 4' -Size 11 -Color 'F05423'
-Style -Name 'Heading 5' -Size 10 -Color 'F05423'
+Style -Name 'Title' -Size 24 -Color 'FE5000' -Align Center
+Style -Name 'Title 2' -Size 18 -Color '474747' -Align Center
+Style -Name 'Title 3' -Size 12 -Color '474747' -Align Left
+Style -Name 'Heading 1' -Size 16 -Color 'FE5000'
+Style -Name 'Heading 2' -Size 14 -Color 'FE5000'
+Style -Name 'Heading 3' -Size 12 -Color 'FE5000'
+Style -Name 'Heading 4' -Size 11 -Color '474747'
+Style -Name 'Heading 5' -Size 10 -Color '474747'
 Style -Name 'Normal' -Size 10 -Color '565656' -Default
 Style -Name 'Caption' -Size 10 -Color '565656' -Italic -Align Center
 Style -Name 'Header' -Size 10 -Color '565656' -Align Center
 Style -Name 'Footer' -Size 10 -Color '565656' -Align Center
-Style -Name 'TOC' -Size 16 -Color 'F05423'
-Style -Name 'TableDefaultHeading' -Size 10 -Color 'FFFFFF' -BackgroundColor '2F2F2F'
+Style -Name 'TOC' -Size 16 -Color 'FE5000'
+Style -Name 'TableDefaultHeading' -Size 10 -Color 'FFFFFF' -BackgroundColor '474747'
 Style -Name 'TableDefaultRow' -Size 10 -Color '565656'
-Style -Name 'Critical' -Size 10 -BackgroundColor 'FFB38F'
-Style -Name 'Warning' -Size 10 -BackgroundColor 'FFE860'
-Style -Name 'Info' -Size 10 -BackgroundColor 'A6D8E7'
-Style -Name 'OK' -Size 10 -BackgroundColor 'AADB1E'
+Style -Name 'Critical' -Size 10 -BackgroundColor 'FF9BAD'
+Style -Name 'Warning' -Size 10 -BackgroundColor 'FEB804'
+Style -Name 'Info' -Size 10 -BackgroundColor '5AB0EE'
+Style -Name 'OK' -Size 10 -BackgroundColor '00B89E'
 
 # Configure Table Styles
 $TableDefaultProperties = @{
     Id = 'TableDefault'
     HeaderStyle = 'TableDefaultHeading'
     RowStyle = 'TableDefaultRow'
-    BorderColor = '464547'
+    BorderColor = '474747'
     Align = 'Left'
     CaptionStyle = 'Caption'
     CaptionLocation = 'Below'
