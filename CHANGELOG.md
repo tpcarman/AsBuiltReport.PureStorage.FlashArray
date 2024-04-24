@@ -1,4 +1,4 @@
-# :arrows_counterclockwise: PureStorage FlashArray As Built Report Changelog
+# :arrows_clockwise: Pure Storage FlashArray As Built Report Changelog
 
 ## [0.5.0] - Unreleased
 
