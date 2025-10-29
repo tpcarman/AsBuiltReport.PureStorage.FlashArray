@@ -1,6 +1,7 @@
+<!-- ********** DO NOT EDIT THESE LINKS ********** -->
 <p align="center">
     <a href="https://www.asbuiltreport.com/" alt="AsBuiltReport"></a>
-            <img src='https://raw.githubusercontent.com/AsBuiltReport/AsBuiltReport/master/AsBuiltReport.png' width="8%" height="8%" /></a>
+            <img src='https://github.com/AsBuiltReport.png' width="8%" height="8%" /></a>
 </p>
 <p align="center">
     <a href="https://www.powershellgallery.com/packages/AsBuiltReport.PureStorage.FlashArray/" alt="PowerShell Gallery Version">
@@ -24,51 +25,50 @@
 </p>
 
 <p align="center">
-    <a href='https://ko-fi.com/B0B7DDGZ7' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+    <a href='https://ko-fi.com/B0B7DDGZ7' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://ko-fi.com/img/githubbutton_sm.svg' border='0' alt='Want to keep alive this project? Support me on Ko-fi' /></a>
 </p>
+<!-- ********** DO NOT EDIT THESE LINKS ********** -->
 
 # PureStorage FlashArray As Built Report
-Pure Storage FlashArray AsBuiltReport is a module of the parent "AsBuiltReport" [project](https://github.com/AsBuiltReport/AsBuiltReport). AsBuiltReport is a PowerShell module which generates As-Built documentation for many common datacentre infrastructure systems. Reports can be generated in Text, HTML and MS Word formats and can be presented with custom styling to align with your company/customer's brand.
 
-For detailed documentation around the whole project, please refer to the `README.md` file in the parent AsBuiltReport repository (linked to above). This README is specific only to the PureStorage Flasharray repository.
+<!-- ********** REMOVE THIS MESSAGE WHEN THE MODULE IS FUNCTIONAL ********** -->
+## :exclamation: THIS ASBUILTREPORT MODULE IS CURRENTLY IN DEVELOPMENT AND MIGHT NOT YET BE FUNCTIONAL ❗
 
-## :books: Sample Reports
+PureStorage FlashArray As Built Report is a PowerShell module which works in conjunction with [AsBuiltReport.Core](https://github.com/AsBuiltReport/AsBuiltReport.Core).
+
+[AsBuiltReport](https://github.com/AsBuiltReport/AsBuiltReport) is an open-sourced community project which utilises PowerShell to produce as-built documentation in multiple document formats for multiple vendors and technologies.
+
+Please refer to the AsBuiltReport [website](https://www.asbuiltreport.com) for more detailed information about this project.
 
 # :beginner: Getting Started
+Below are the instructions on how to install, configure and generate a PureStorage FlashArray As Built report.
 
 ## :floppy_disk: Supported Versions
+<!-- ********** Update supported FlashArray versions ********** -->
+The PureStorage FlashArray As Built Report supports the following FlashArray versions;
 
+### PowerShell
+This report is compatible with the following PowerShell versions;
 
-This report is compatible with the following Purity and PowerShell versions;
-
-| Purity Version | Pure Storage SDK | Windows PowerShell 5.1 |     PowerShell 7    |
-| :--------------: | :--------------: | :----------------------: |:--------------------: |
-| 4.8.0 - 5.3.0 | 1.x |   :white_check_mark:   | :x: |
-| 6.0.0 or later | 2.x | :white_check_mark:   | :white_check_mark: |
+<!-- ********** Update supported PowerShell versions ********** -->
+| Windows PowerShell 5.1 |     PowerShell 7    |
+|:----------------------:|:--------------------:|
+|   :white_check_mark:   | :white_check_mark: |
 ## :wrench: System Requirements
-PowerShell 5.1 or PowerShell 7, and the following PowerShell modules are required for generating a Pure Storage FlashArray As Built report.
+<!-- ********** Update system requirements ********** -->
+PowerShell 5.1 or PowerShell 7, and the following PowerShell modules are required for generating a PureStorage FlashArray As Built Report.
 
-Each of these modules can be easily downloaded and installed via the PowerShell Gallery
-- [Pure Storage Powershell SDK Module](https://www.powershellgallery.com/packages/PureStoragePowerShellSDK/)
-- [Pure Storage Powershell SDK2 Module](https://www.powershellgallery.com/packages/PureStoragePowerShellSDK2/)
-- [AsBuiltReport Module](https://www.powershellgallery.com/packages/AsBuiltReport/)
-### Linux & macOS
-* .NET Core is required for cover page image support on Linux and macOS operating systems.
-    * [Installing .NET Core for macOS](https://docs.microsoft.com/en-us/dotnet/core/install/macos)
-    * [Installing .NET Core for Linux](https://docs.microsoft.com/en-us/dotnet/core/install/linux)
+- [AsBuiltReport.PureStorage.FlashArray Module](https://www.powershellgallery.com/packages/AsBuiltReport.PureStorage.FlashArray/)
 
-❗ If you are unable to install .NET Core, you must set `ShowCoverPageImage` to `False` in the report JSON configuration file.
 ### :closed_lock_with_key: Required Privileges
-To generate a Pure Storage FlashArray report, a user account with the readonly role of higher on the FlashArray is required.
+<!-- ********** Define required privileges ********** -->
+<!-- ********** Try to follow best practices to define least privileges ********** -->
 
 ## :package: Module Installation
 
 ### PowerShell
-Open a PowerShell terminal window and install each of the required modules.
-
+<!-- ********** Add installation for any additional PowerShell module(s) ********** -->
 ```powershell
-Install-Module PureStoragePowerShellSDK
-Install-Module PureStoragePowerShellSDK2
 install-module AsBuiltReport.PureStorage.FlashArray
 ```
 
@@ -92,7 +92,7 @@ The PureStorage FlashArray As Built Report utilises a JSON file to allow configu
 
 A PureStorage FlashArray report configuration file can be generated by executing the following command;
 ```powershell
-New-AsBuiltReportConfig -Report AsBuiltReport.PureStorage.FlashArray -FolderPath <User specified folder> -Filename <Optional>
+New-AsBuiltReportConfig -Report PureStorage.FlashArray -FolderPath <User specified folder> -Filename <Optional>
 ```
 
 Executing this command will copy the default PureStorage FlashArray report JSON configuration to a user specified folder.
@@ -101,6 +101,7 @@ All report settings can then be configured via the JSON file.
 
 The following provides information of how to configure each schema within the report's JSON file.
 
+<!-- ********** DO NOT CHANGE THE REPORT SCHEMA SETTINGS ********** -->
 ### Report
 The **Report** schema provides configuration of the PureStorage FlashArray report information.
 
@@ -117,6 +118,7 @@ The **Report** schema provides configuration of the PureStorage FlashArray repor
 ### Options
 The **Options** schema allows certain options within the report to be toggled on or off.
 
+<!-- ********** Add/Remove the number of InfoLevels as required ********** -->
 ### InfoLevel
 The **InfoLevel** schema allows configuration of each section of the report at a granular level. The following sections can be set.
 
@@ -135,5 +137,4 @@ There are 6 levels (0-5) of detail granularity for each section as follows;
 The **Healthcheck** schema is used to toggle health checks on or off.
 
 ## :computer: Examples
-
-
+<!-- ********** Add some examples. Use other AsBuiltReport modules as a guide. ********** -->

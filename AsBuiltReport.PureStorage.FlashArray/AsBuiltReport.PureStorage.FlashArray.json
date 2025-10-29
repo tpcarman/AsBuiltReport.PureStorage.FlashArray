@@ -1,0 +1,20 @@
+{
+    "Report": {
+        "Name": "PureStorage FlashArray As Built Report",
+        "Version": "1.0",
+        "Status": "Released",
+        "ShowCoverPageImage": true,
+        "ShowTableOfContents": true,
+        "ShowHeaderFooter": true,
+        "ShowTableCaptions": true
+    },
+    "Options": {
+
+    },
+    "InfoLevel": {
+        "_comment_": "0 = Disabled, 1 = Enabled / Summary, 2 = Adv Summary, 3 = Detailed, 4 = Adv Detailed, 5 = Comprehensive"
+    },
+    "HealthCheck": {
+
+    }
+}

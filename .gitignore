@@ -1,2 +1,14 @@
+debug.log
+.gitignore
+### PowerShell ###
+# Exclude packaged modules
+*.zip
 
-*.bak
+# Exclude .NET assemblies from source
+*.dll
+
+### vscode ###
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+*.code-workspace

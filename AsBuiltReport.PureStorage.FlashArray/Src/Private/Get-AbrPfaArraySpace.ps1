@@ -44,7 +44,7 @@ function Get-AbrPfaArraySpace {
         $TableParams = @{
             Name = "System Summary - $($PfaArray.Name)"
             List = $true
-            ColumnWidths = 50, 50
+            ColumnWidths = 40, 60
         }
         if ($Report.ShowTableCaptions) {
             $TableParams['Caption'] = "- $($TableParams.Name)"

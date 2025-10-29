@@ -2,7 +2,7 @@ name: Bug Report
 description: File a bug report
 labels: ["bug"]
 assignees:
-  - rebelinux
+  - tpcarman
 body:
   - type: textarea
     id: bug-description
@@ -96,3 +96,4 @@ body:
         - label: >-
             I have checked for previously opened & closed [issues](https://github.com/AsBuiltReport/AsBuiltReport.PureStorage.FlashArray/issues) before submitting this bug report.
           required: true
+

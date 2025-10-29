@@ -2,14 +2,13 @@ name: Change Request
 description: Request a new change or an improvement
 labels: ["change request"]
 assignees:
-  - rebelinux
 body:
   - type: textarea
     id: description
     attributes:
       label: Description
       description: >-
-        Please provide a detailed description of your idea so that the project maintainers and contributors can fully understand what change, change, or improvement you are proposing.
+        Please provide a detailed description of your idea so that the project maintainers and contributors can fully understand what change, feature, or improvement you are proposing.
     validations:
       required: true
   - type: textarea
@@ -32,3 +31,4 @@ body:
         - label: >-
             I have checked for previously opened & closed [issues](https://github.com/AsBuiltReport/AsBuiltReport.PureStorage.FlashArray/issues) before submitting this change request.
           required: true
+
